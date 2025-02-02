@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-performance-hello-world",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "pm2": "./node_modules/.bin/pm2 start server.js -i 10",
+    "cluster": "node cluster-main.js",
+    "test": "sh ./test.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "volta": {
+    "node": "23.7.0"
+  },
+  "devDependencies": {
+    "pm2": "5.4.3"
+  }
+}
